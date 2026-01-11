@@ -9,6 +9,49 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link href="eleutherios-style.css" rel="stylesheet">
+    <style>
+        /* Video Section Styles */
+        .video-section {
+            padding: 120px 0;
+        }
+        .video-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .video-intro {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto 60px;
+        }
+        .video-intro p {
+            font-size: 1.1rem;
+            color: #94a3b8;
+            line-height: 1.8;
+        }
+        .video-wrapper {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%;
+            border-radius: 16px;
+            overflow: hidden;
+            border: 1px solid rgba(0, 212, 255, 0.15);
+            box-shadow: 0 20px 50px rgba(0, 212, 255, 0.1);
+            background: rgba(0, 0, 0, 0.3);
+            transition: all 0.3s ease;
+        }
+        .video-wrapper:hover {
+            border-color: rgba(0, 212, 255, 0.3);
+            box-shadow: 0 25px 60px rgba(0, 212, 255, 0.15);
+        }
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
 </head>
 <body>
     <!-- Background -->
@@ -39,6 +82,7 @@
                 <li><a href="#capabilities">Capabilities</a></li>
                 <li><a href="#architecture">Architecture</a></li>
                 <li><a href="#screenshots">Screenshots</a></li>
+                <li><a href="#demo">Demo</a></li>
                 <li><a href="#validation">Validation</a></li>
                 <li><a href="#ai-teams">For AI Teams</a></li>
                 <li><a href="https://github.com/eleutherios-project" target="_blank" class="external-link">GitHub</a></li>
@@ -54,9 +98,10 @@
             <a href="#capabilities">Capabilities</a>
             <a href="#architecture">Architecture</a>
             <a href="#screenshots">Screenshots</a>
+            <a href="#demo">Demo</a>
             <a href="#validation">Validation</a>
             <a href="#ai-teams">For AI Teams</a>
-            <a href="https://github.com/yourusername/Eleutherios" target="_blank" class="external-link">GitHub</a>
+            <a href="https://github.com/eleutherios-project" target="_blank" class="external-link">GitHub</a>
         </div>
     </header>
 
@@ -310,6 +355,28 @@
         </div>
     </section>
 
+    <!-- Video Demo Section -->
+    <section class="video-section" id="demo">
+        <div class="video-container">
+            <h2 class="section-title">WATCH THE WALKTHROUGH</h2>
+            
+            <div class="video-intro">
+                <p>See the full system in action — from data ingestion through detection analysis.</p>
+            </div>
+
+            <div class="video-wrapper">
+                <iframe 
+                    src="https://www.youtube.com/embed/zqvRDn3QcNo" 
+                    title="Eleutherios Demo Walkthrough"
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </section>
+
     <!-- Validation Section -->
     <section class="validation-section" id="validation">
         <div class="validation-container">
@@ -433,7 +500,7 @@
                 <p>An individual with a gaming laptop can now perform the same structural epistemological analysis that would have required a well-funded research team five years ago. Docker deployment, pre-populated demo data set, immediate capability.</p>
                 
                 <div class="contact-links">
-                    <a href="https://github.com/Eleutherios-project/Eleutherios-docker/blob/main/README.md" class="contact-link" target="_blank">
+                    <a href="https://github.com/Eleutherios-project/Eleutherios-docker/blob/main/INSTALL.md" class="contact-link" target="_blank">
                         <span class="contact-link-icon">
                             <svg viewBox="0 0 24 24">
                                 <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/>
@@ -475,7 +542,7 @@
                 <a href="#validation">Validation</a>
                 <a href="#ai-teams">For AI Teams</a>
                 <a href="#">Documentation</a>
-                <a href="https://github.com/yourusername/Eleutherios" target="_blank">GitHub</a>
+                <a href="https://github.com/eleutherios-project" target="_blank">GitHub</a>
             </div>
             <div class="footer-copyright">
                 <p>© 2025 Eleutherios. Open source under MIT License.</p>
